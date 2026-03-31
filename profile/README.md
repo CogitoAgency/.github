@@ -10,32 +10,34 @@
 
 ---
 
-We build tools that run small businesses. Hair salons. Restaurants. Auto shops. Tax preparers. Tutoring centers.
+We build the operating system for small businesses. Hair salons. Restaurants. Auto shops. Tax preparers. Tutoring centers.
 
-These businesses exist in every neighborhood, in every language — and the tech industry has never centered them. If the people building the tools have never sat in that waiting room, never translated for their parents at a government office — how would they know what to build?
+These businesses are the heartbeat of every neighborhood, operating in every language — yet the tech industry has historically overlooked them. If the people building tools have never sat in that waiting room, or translated for their parents at a government office — how would they know what to build?
 
-## What we ship
+We are changing that.
+
+## 🛠 What we ship
 
 ### 🌐 Free & Open Source
 
-- **[Breathe Lite](https://github.com/CogitoAgency/breathe-lite)** — Free, open source. MCP server with 57 tools: persistent memory, task hierarchy, sessions, autonomous workflows.
-- **[SwiftAware](https://github.com/CogitoAgency/SwiftAware)** — Ghost UI toolkit for LLM-assisted iOS development.
-- **[Machine Setup](https://github.com/CogitoAgency/machine-setup)** — One script. Fresh Mac to fully loaded AI dev machine for solo founders.
+- **[Breathe Lite](https://github.com/CogitoAgency/breathe-lite)** — Free, open-source MCP server for AI-native developers. Provides persistent memory, hierarchical task management, and autonomous workflows via a built-in CLI.
+- **[GhostUI](https://github.com/CogitoAgency/GhostUI)** — Ghost UI toolkit for LLM-assisted Swift and iOS development.
+- **[Machine Setup](https://github.com/CogitoAgency/machine-setup)** — One script. Fresh Mac to fully loaded AI dev machine. Includes Claude Code, OpenCode, Gemini, Ollama, Node, Python, and Go.
 
 ### 🍎 macOS Applications
 
-- **[Breathe](https://cogito.cv/breathe)** — Free. macOS menu bar app + AI daemon. Connects every AI tool you use, runs the MCP server, manages the kernel.
-- **[BreathFlow](https://cogito.cv/breathflow)** — Free with Breathe. System-wide voice dictation for macOS developers. WhisperKit on-device, 98ms latency, zero cloud. Hold `⇧⌘` anywhere — release to paste.
+- **[Breathe](https://cogito.cv/breathe)** — Free macOS menu bar app and AI daemon. Connects every AI tool you use, runs the MCP server, and manages the kernel seamlessly.
+- **[BreathFlow](https://cogito.cv/breathflow)** — System-wide voice dictation for macOS developers (Free with Breathe). Features WhisperKit on-device, 98ms latency, and zero cloud dependencies. Hold `⇧⌘` anywhere — release to paste.
 
 ### 🏢 Platform & Commercial
 
-- **Cogito** — Autonomous agent platform. Intent → swarm → shipped. Self-evolving via the DarkFactory loop.
-- **SMB** `$249/mo` — Full business OS. Booking, CRM, payments, social, voice receptionist, finance — all AI-native.
-- **Enterprise** — Self-hosted. RBAC, compliance, SCIM, SSO. Your data, your servers.
+- **Cogito** — Autonomous agent platform. From intent to swarm to shipped. Self-evolving via the DarkFactory loop.
+- **SMB** (`$249/mo`) — The full business OS. Booking, CRM, payments, social, voice receptionist, finance — all AI-native and integrated.
+- **Enterprise** — Self-hosted. RBAC, compliance, SCIM, SSO. Your data, running securely on your servers.
 
 ---
 
-## The Stack
+## 🏗 The Stack
 
 ```text
 Enterprise  (org learning, dark factory, autopoiesis)
@@ -49,10 +51,10 @@ Engine      (handlers, recipes, MCP tools)        :4567
 
 ---
 
-## We're hiring
+## 🤝 We're Hiring
 
-Every person we hire is a **Gentle UX Designer** and a power AI user. That's not a role — it's the floor.
+Every person we hire is a **Gentle UX Designer** and a power AI user. That is not just a role — it's the baseline.
 
-Immigrant families preferred. If you grew up switching between languages at the dinner table, you already understand the problem we're solving.
+We prefer immigrant families. If you grew up switching between languages at the dinner table, you already understand the nuance of the problems we are solving.
 
 → **[cogito.cv/careers](https://cogito.cv/careers)**
