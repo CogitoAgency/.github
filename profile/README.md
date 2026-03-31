@@ -32,7 +32,7 @@ We are changing that.
 ### 🏢 Platform & Commercial
 
 - **Cogito** — Autonomous agent platform. From intent to swarm to shipped. Self-evolving via the DarkFactory loop.
-- **SMB** (`$249/mo`) — The full business OS. Booking, CRM, payments, social, voice receptionist, finance — all AI-native and integrated.
+- **SMB** — The full business OS. Booking, CRM, payments, social, voice receptionist, finance — all AI-native and integrated.
 - **Enterprise** — Self-hosted. RBAC, compliance, SCIM, SSO. Your data, running securely on your servers.
 
 ---
