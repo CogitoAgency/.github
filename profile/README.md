@@ -39,12 +39,6 @@ Every Sunday at 00:00 UTC the platform ships a version of itself that is measura
 
 ## 🛠 What we ship
 
-### 🌐 Free & Open Source
-
-- **[Breathe Lite](https://github.com/CogitoAgency/breathe-lite)** — Free, open-source MCP server for AI-native developers. Persistent memory, hierarchical task management, autonomous workflows.
-- **[GhostUI](https://github.com/CogitoAgency/GhostUI)** — UI toolkit for LLM-assisted Swift and iOS development.
-- **[Machine Setup](https://github.com/CogitoAgency/machine-setup)** — One script. Fresh Mac to fully loaded AI dev machine. Claude Code, Gemini, Ollama, Node, Python, Go.
-
 ### 🍎 macOS Applications
 
 - **[Breathe](https://cogito.cv/breathe)** — Free macOS menu bar app and AI daemon. Connects every AI tool you use, runs the MCP server, manages the kernel seamlessly.
