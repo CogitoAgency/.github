@@ -10,79 +10,72 @@
 
 ---
 
-## The Moat: A Platform That Rewrites Itself
+## The Problem
 
-Most SaaS companies ship code. We ship a platform that ships its own code.
+There are 33 million small businesses in the United States. Hair salons. Restaurants. Auto shops. Tax preparers. Tutoring centers. The heartbeat of every neighborhood — operating in every language, built by immigrants and families, funded by craft and stubbornness.
 
-Every night, Cogito reads its own performance data, proposes improvements via LLM, validates them through a sandboxed test harness, and passes them through a six-model governance council — with no human in the loop. The platform gets measurably smarter every 24 hours. The longer it runs, the wider the gap from anything a traditional engineering team could match.
+They are also the most underserved businesses in technology. The software industry built tools for companies with tech teams. These businesses don't have tech teams. They have one person doing everything — and when they're with a client, the phone rings. When the phone rings, they miss the booking. When they miss the booking, they lose $80. Multiplied across a year, it's thousands of dollars in invisible losses that no product on the market was ever designed to recover.
+
+We are building the operating system that fixes this — not by replacing these owners, but by giving them an AI that works the way they do: in their language, learning their patterns, getting better every week.
+
+---
+
+## What We Built
+
+**Cogito SMB** is a full business OS for small operators: AI receptionist, online booking, client CRM, payments, SMS/email automation, social media scheduling, and a business website — all AI-native, all integrated, one monthly fee, no setup required.
+
+Tell it what your business does. It adapts. A client books → AI sends the confirmation. A repeat client calls → AI knows their name and last appointment. The business owner just shows up and works.
+
+The platform speaks English, Spanish, Chinese, and Portuguese out of the box because the owners we're building for grew up in more than one language.
+
+---
+
+## How It Stays Ahead
+
+Traditional software freezes when a bug hits — someone files a ticket, a developer fixes it eventually, a PM decides whether it's a priority. That cycle takes weeks. At 33 million businesses, that's not a product problem. That's a structural one.
+
+We solved it at the architecture level. Cogito reads its own performance data, proposes its own improvements via LLM, validates them through a sandboxed test harness, and passes them through a governance council of six models before anything touches production. No human required.
 
 ```
-Live Usage Signals
-  (tool errors · latency · recipe failures · customer outcomes)
+Live usage signals
+  (tool errors · missed bookings · recipe failures · customer outcomes)
          ↓
-  SignalGoalInjector → GoalEngine (priority queue)
+  GoalEngine: priority queue built from real signal
          ↓
-  DarkFactory: LLM proposes typed patch → PatchSandbox (5 dry-run passes)
+  DarkFactory: LLM proposes patch → sandbox validates (5 dry-run passes)
          ↓
-  Parliament: 6-model LLM council, ≥4 votes required to merge
+  Parliament: 6-model council, 4/6 votes required to merge
          ↓
   Auto-merge → nightly release → measurably better platform
 ```
 
-**The compounding effect:** Each improvement increases the platform's ability to propose better next improvements. The kernel tracks its own intelligence across 10 dimensions — reasoning, tool selection, metacognition, recovery, memory coherence — and the score goes up every cycle. We call this the **Kernel Intelligence Score (KIS)**.
-
----
-
-## Why This Is a Moat
-
-| Traditional SaaS | Cogito |
-|---|---|
-| Engineers write patches in response to bugs | Platform detects, proposes, and merges its own patches |
-| Feature velocity limited by headcount | Feature velocity scales with compute |
-| Institutional knowledge walks out the door | Every decision is committed, versioned, and searchable |
-| Roadmap driven by PM priority queues | Roadmap driven by live customer signal + governance rules |
-| Churn is a lagging indicator | Churn risk surfaces as a model signal before the customer leaves |
-
-The business that runs on Cogito gets a compounding return: every week, the AI that runs their operations gets better at their specific business context — booking patterns, client preferences, seasonal load, language. That's not software. That's a trained asset.
+Every night the platform ships a version of itself that is better than the night before. The longer it runs on real businesses, the more precisely it learns what small business owners actually need — and the harder it becomes for a competitor starting from scratch to catch up.
 
 ---
 
 ## The Stack
 
 ```
-Enterprise   org-level evolution, parliament governance, compliance, SCIM/SSO
+Enterprise   org-level evolution · parliament governance · compliance · SCIM/SSO
      ↓
-Kernel       intent → swarm dispatch, goals, daemon          :3001
+Kernel       intent → swarm dispatch · goal engine · daemon          :3001
      ↓
-Engine       MCP tool handlers, YAML recipes                 :4567
+Engine       MCP tool handlers · YAML recipes                        :4567
      ↓
-Products     SMB portal · Breathe · AetherCloud Console
+Products     SMB · Breathe · AetherCloud Console
 ```
 
-**Scale today:** 28 handler domains · 287 YAML recipes · 98 governance rules · 428+ MCP tools · 5,800+ automated tests
-
-The same kernel that powers a hair salon in the Mission can power a 200-person nonprofit or a multi-location franchise. The topology changes; the loop does not.
+28 handler domains · 287 YAML recipes · 98 governance rules · 428+ MCP tools · 5,800+ automated tests
 
 ---
 
 ## Products
 
-### Breathe — Free Developer Daemon
-macOS menu bar app and MCP server. Connects all AI tools, manages the local kernel, stores memory in a searchable SQLite graph. Free forever.
+**Breathe** — Free macOS daemon and MCP server. Connects all AI tools, manages the local kernel, stores memory in a searchable graph. Free forever.
 
-### SMB — $249/mo Business OS
-Booking · CRM · Payments · SMS/Email · AI Voice Receptionist · Social Scheduler · Finance · Google Presence. Every feature AI-native. One price, everything on. No per-seat fees.
+**SMB ($249/mo)** — Full business OS. Booking, CRM, payments, voice receptionist, social scheduler, invoicing, website. One price, everything on, no per-seat fees.
 
-### Enterprise — Self-Hosted
-RBAC · Audit trails · SCIM directory sync · OIDC/SSO (Okta, Google, Azure AD, Auth0) · Per-org evolution isolation · Compliance dashboard (target: 100/100). Your data, your infrastructure.
-
----
-
-## The Market We're Actually Addressing
-
-The 33 million small businesses in the US spend an estimated **$500B/year** on software and admin labor combined — and most are still running on spreadsheets, group texts, and Square. They don't need another point solution. They need an OS.
-
-We are building that OS for the neighborhoods most software companies have never visited — immigrant-owned, multilingual, cash-and-relationship-driven. That is not a charity thesis. It is an untapped market with high retention, strong word-of-mouth, and zero competitive pressure from incumbents.
+**Enterprise** — Self-hosted. RBAC, audit trails, SCIM directory sync, OIDC/SSO (Okta, Google, Azure AD, Auth0). Your data, your infrastructure.
 
 ---
 
