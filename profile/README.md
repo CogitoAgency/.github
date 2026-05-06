@@ -10,66 +10,84 @@
 
 ---
 
-We build the operating system for small businesses. Hair salons. Restaurants. Auto shops. Tax preparers. Tutoring centers.
+## The Moat: A Platform That Rewrites Itself
 
-These businesses are the heartbeat of every neighborhood, operating in every language — yet the tech industry has historically overlooked them. If the people building tools have never sat in that waiting room, or translated for their parents at a government office — how would they know what to build?
+Most SaaS companies ship code. We ship a platform that ships its own code.
 
-We are changing that. And we didn't build a product to do it. **We built the factory that builds the product.**
-
----
-
-## The Loop
-
-Traditional SaaS freezes when a bug hits — someone writes a ticket, a developer fixes it, a PM prioritizes it. That's a treadmill, not a moat.
-
-Our platform reads its own error logs, writes its own patches, and votes on its own improvements — continuously, autonomously, at no marginal cost.
+Every night, Cogito reads its own performance data, proposes improvements via LLM, validates them through a sandboxed test harness, and passes them through a six-model governance council — with no human in the loop. The platform gets measurably smarter every 24 hours. The longer it runs, the wider the gap from anything a traditional engineering team could match.
 
 ```
-SMB Customer Usage
-    → Prometheus signal (tool errors · latency · recipe failures)
-    → SignalGoalInjector → GoalEngine (priority queue)
-    → DarkFactory (LLM proposes patch → PatchSandbox validates)
-    → 5 dry-run passes → Parliament (LLM council, ≥4/6 votes required)
-    → Auto-merge to main → Weekly release → Smarter platform
+Live Usage Signals
+  (tool errors · latency · recipe failures · customer outcomes)
+         ↓
+  SignalGoalInjector → GoalEngine (priority queue)
+         ↓
+  DarkFactory: LLM proposes typed patch → PatchSandbox (5 dry-run passes)
+         ↓
+  Parliament: 6-model LLM council, ≥4 votes required to merge
+         ↓
+  Auto-merge → nightly release → measurably better platform
 ```
 
-Every Sunday at 00:00 UTC the platform ships a version of itself that is measurably better than seven days ago — without a human touching a keyboard.
+**The compounding effect:** Each improvement increases the platform's ability to propose better next improvements. The kernel tracks its own intelligence across 10 dimensions — reasoning, tool selection, metacognition, recovery, memory coherence — and the score goes up every cycle. We call this the **Kernel Intelligence Score (KIS)**.
 
 ---
 
-## 🛠 What we ship
+## Why This Is a Moat
 
-### 🍎 macOS Applications
+| Traditional SaaS | Cogito |
+|---|---|
+| Engineers write patches in response to bugs | Platform detects, proposes, and merges its own patches |
+| Feature velocity limited by headcount | Feature velocity scales with compute |
+| Institutional knowledge walks out the door | Every decision is committed, versioned, and searchable |
+| Roadmap driven by PM priority queues | Roadmap driven by live customer signal + governance rules |
+| Churn is a lagging indicator | Churn risk surfaces as a model signal before the customer leaves |
 
-- **[Breathe](https://cogito.cv/breathe)** — Free macOS menu bar app and AI daemon. Connects every AI tool you use, runs the MCP server, manages the kernel seamlessly.
-- **[BreathFlow](https://cogito.cv/breathflow)** — System-wide voice dictation for macOS developers (free with Breathe). WhisperKit on-device, 98ms latency, zero cloud dependencies. Hold `⇧⌘` anywhere — release to paste.
-
-### 🏢 Platform & Commercial
-
-- **Cogito** — Autonomous agent platform. Intent → swarm → shipped. Self-evolving via the DarkFactory loop.
-- **SMB** (`$249/mo`) — Full business OS. Booking, CRM, payments, social, voice receptionist, finance — all AI-native and integrated.
-- **Enterprise** — Self-hosted. RBAC, compliance, SCIM, SSO (OIDC). Your data, your servers.
+The business that runs on Cogito gets a compounding return: every week, the AI that runs their operations gets better at their specific business context — booking patterns, client preferences, seasonal load, language. That's not software. That's a trained asset.
 
 ---
 
-## 🏗 The Stack
+## The Stack
 
-```text
-Enterprise   (org learning, dark factory, parliament governance)
+```
+Enterprise   org-level evolution, parliament governance, compliance, SCIM/SSO
      ↓
-Kernel       (intent → swarm, goals, daemon)          :3001
+Kernel       intent → swarm dispatch, goals, daemon          :3001
      ↓
-Engine       (handlers, recipes, MCP tools)           :4567
+Engine       MCP tool handlers, YAML recipes                 :4567
+     ↓
+Products     SMB portal · Breathe · AetherCloud Console
 ```
 
-*27 handler domains · 287 YAML recipes · 98 governance rules · 428 MCP tools*
+**Scale today:** 28 handler domains · 287 YAML recipes · 98 governance rules · 428+ MCP tools · 5,800+ automated tests
+
+The same kernel that powers a hair salon in the Mission can power a 200-person nonprofit or a multi-location franchise. The topology changes; the loop does not.
 
 ---
 
-## 🤝 We're Hiring
+## Products
 
-Every person we hire is a **Gentle UX Designer** and a power AI user. That is not just a role — it's the baseline.
+### Breathe — Free Developer Daemon
+macOS menu bar app and MCP server. Connects all AI tools, manages the local kernel, stores memory in a searchable SQLite graph. Free forever.
 
-We prefer immigrant families. If you grew up switching between languages at the dinner table, you already understand the nuance of the problems we are solving.
+### SMB — $249/mo Business OS
+Booking · CRM · Payments · SMS/Email · AI Voice Receptionist · Social Scheduler · Finance · Google Presence. Every feature AI-native. One price, everything on. No per-seat fees.
+
+### Enterprise — Self-Hosted
+RBAC · Audit trails · SCIM directory sync · OIDC/SSO (Okta, Google, Azure AD, Auth0) · Per-org evolution isolation · Compliance dashboard (target: 100/100). Your data, your infrastructure.
+
+---
+
+## The Market We're Actually Addressing
+
+The 33 million small businesses in the US spend an estimated **$500B/year** on software and admin labor combined — and most are still running on spreadsheets, group texts, and Square. They don't need another point solution. They need an OS.
+
+We are building that OS for the neighborhoods most software companies have never visited — immigrant-owned, multilingual, cash-and-relationship-driven. That is not a charity thesis. It is an untapped market with high retention, strong word-of-mouth, and zero competitive pressure from incumbents.
+
+---
+
+## We're Hiring
+
+Every person we hire is a **Gentle UX Designer** — someone who has personally navigated the gap between technology and the communities we serve. If you grew up translating for your parents at a government office, you already understand the problem better than most PMs at a FAANG company.
 
 → **[cogito.cv/careers](https://cogito.cv/careers)**
