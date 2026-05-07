@@ -26,7 +26,7 @@ We are building the operating system that fixes this — not by replacing these 
 
 Tell it what your business does. It adapts. A client books → AI sends the confirmation. A repeat client calls → AI knows their name and last appointment. The business owner just shows up and works.
 
-The platform speaks English, Spanish, Chinese, and Portuguese out of the box because the owners we're building for grew up in more than one language.
+The platform speaks English, Spanish, and Chinese out of the box because the owners we're building for grew up in more than one language.
 
 ---
 
