@@ -34,48 +34,46 @@ The platform speaks English, Spanish, and Chinese out of the box because the own
 
 Traditional software freezes when a bug hits — someone files a ticket, a developer fixes it eventually, a PM decides whether it's a priority. That cycle takes weeks. At 33 million businesses, that's not a product problem. That's a structural one.
 
-We solved it at the architecture level. Cogito reads its own performance data, proposes its own improvements via LLM, validates them through a sandboxed test harness, and passes them through a governance council of six models before anything touches production. No human required.
+We solved it at the architecture level. Cogito reads its own performance data, proposes its own improvements via LLM, validates them through a sandboxed test harness, and passes them through a governance council of six AI models before anything reaches production. No human required.
 
 ```
-Live usage signals
-  (tool errors · missed bookings · recipe failures · customer outcomes)
-         ↓
-  GoalEngine: priority queue built from real signal
-         ↓
-  DarkFactory: LLM proposes patch → sandbox validates (5 dry-run passes)
-         ↓
-  Parliament: 6-model council, 4/6 votes required to merge
-         ↓
-  Auto-merge → nightly release → measurably better platform
+Customer usage signals
+        ↓
+  Goal prioritization engine
+        ↓
+  AI proposes improvement → sandboxed validation
+        ↓
+  Multi-model governance council (supermajority vote required)
+        ↓
+  Nightly release → measurably better platform
 ```
 
 Every night the platform ships a version of itself that is better than the night before. The longer it runs on real businesses, the more precisely it learns what small business owners actually need — and the harder it becomes for a competitor starting from scratch to catch up.
 
 ---
 
-## The Stack
+## Architecture
 
-```
-Enterprise   org-level evolution · parliament governance · compliance · SCIM/SSO
-     ↓
-Kernel       intent → swarm dispatch · goal engine · daemon          :3001
-     ↓
-Engine       MCP tool handlers · YAML recipes                        :4567
-     ↓
-Products     SMB · Breathe · AetherCloud Console
-```
+The platform is built in four layers, each with a distinct responsibility:
 
-28 handler domains · 287 YAML recipes · 98 governance rules · 428+ MCP tools · 5,800+ automated tests
+| Layer | Role |
+|---|---|
+| **Intelligence** | Continuous self-improvement loop — observes, proposes, governs, and deploys its own upgrades |
+| **Kernel** | Persistent AI brain — intent understanding, goal management, autonomous agent dispatch |
+| **Engine** | Execution layer — domain-specific tools and workflows that run business operations |
+| **Products** | End-user surfaces — SMB portal, developer tools, and ops console |
+
+Each layer is independently deployable and observable. The intelligence loop runs above all of them, treating the entire stack as something it can read, reason about, and improve.
 
 ---
 
 ## Products
 
-**Breathe** — Free macOS daemon and MCP server. Connects all AI tools, manages the local kernel, stores memory in a searchable graph. Free forever.
+**Breathe** — Free developer tool and local AI daemon. Gives engineers a persistent memory layer and a unified interface across all AI models. Free forever.
 
-**SMB ($249/mo)** — Full business OS. Booking, CRM, payments, voice receptionist, social scheduler, invoicing, website. One price, everything on, no per-seat fees.
+**SMB ($249/mo)** — Full business OS. Booking, CRM, payments, AI voice receptionist, social scheduling, invoicing, website. One price, everything included.
 
-**Enterprise** — Self-hosted. RBAC, audit trails, SCIM directory sync, OIDC/SSO (Okta, Google, Azure AD, Auth0). Your data, your infrastructure.
+**Enterprise** — Self-hosted. Role-based access control, audit trails, directory sync, single sign-on. Built for organizations that require data sovereignty and compliance.
 
 ---
 
