@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[cogito.cv](https://cogito.cv) &nbsp;·&nbsp; [Breathe](https://cogito.cv/breathe) &nbsp;·&nbsp; [Careers](https://cogito.cv/careers) &nbsp;·&nbsp; [foundry@cogito.cv](mailto:foundry@cogito.cv)
+[cogito.cv](https://cogito.cv) &nbsp;·&nbsp; [Cogito SMB](https://cogito.cv/smb) &nbsp;·&nbsp; [Revenue Leak Audit](https://cogito.cv/revenue-audit) &nbsp;·&nbsp; [Book Audit](https://cogito.cv/revenue-audit#demo-form) &nbsp;·&nbsp; [foundry@cogito.cv](mailto:foundry@cogito.cv)
 
 </div>
 
@@ -13,96 +13,128 @@
 > *四两拨千斤 — four ounces moves a thousand pounds.*
 > Defeat force not by matching it, but by redirecting it.
 
-Most software companies scale by adding engineers. We built a system that doesn't need to.
+Cogito is an AI-native platform that starts with a concrete commercial loop: **recover revenue for service businesses, prove what came back, and use the outcome data to improve the next workflow**.
 
-Cogito is an AI engineering system that designs, ships, and continuously improves software products — autonomously. It observes real usage, identifies what needs to change, reasons about how to change it, validates the change in isolation, and deploys nightly. A small founding team. A platform that compounds every 24 hours.
+Our first product is **Cogito SMB**, an owner-reviewed recovery workspace for salons, wellness teams, fitness studios, and appointment-based service operators. It helps owners see:
 
-The first product we are proving this system on is **Cogito SMB**: a full operating system for small businesses — the hair salons, restaurants, auto shops, and tutoring centers that are the backbone of every neighborhood and the most underserved market in enterprise software. SMB is a use case. The system is the company.
+- money recovered this week
+- clients to invite back
+- bookings to confirm
+- calls to return
+- messages to review before sending
+- weekly proof of replies, bookings, protected appointments, and recovered dollars
+
+The wedge is narrow on purpose. Revenue recovery is fast to understand, valuable enough to pay for, and measurable enough for the platform to learn from.
+
+---
+
+## The First Loop: Revenue Recovery
+
+Most service SMBs leak revenue in ordinary places: missed calls, slow follow-up, no-shows, stale client lists, unpaid visits, and repeat clients who should have been invited back.
+
+Cogito SMB turns those leaks into a short daily action list. The owner stays in control. The product prepares the follow-up, explains the reason, and waits for review before anything goes out.
+
+The first buyer motion is the **Revenue Leak Audit**:
+
+1. Estimate missed demand, no-show exposure, and invite-back opportunity.
+2. Choose one recovery workflow likely to prove value quickly.
+3. Import enough client, booking, or payment context to run the loop.
+4. Review messages before sending.
+5. Read weekly proof: replied, booked, protected, paid.
+
+That is the product story: recover revenue first, then expand from proof.
+
+---
+
+## Why This Compounds
+
+Cogito is not a static dashboard and not a chatbot wrapper. It is a self-evolution engine applied to real business workflows.
+
+Every owner approval, reply, booking, protected appointment, and recovered payment becomes outcome signal. The platform uses that signal to compare workflow variants, preserve approval history, and make the next follow-up list sharper without taking control away from the owner.
+
+```
+Owner-reviewed action
+        ↓
+Reply, booking, payment, or no-show outcome
+        ↓
+Outcome ledger and approval history
+        ↓
+Workflow variant scored against recovered revenue
+        ↓
+Next week's recovery list improves
+```
+
+The customer sees plain work getting done. Underneath, the platform builds a proprietary outcome dataset around what actually brings revenue back.
 
 ---
 
 ## The Engineering System
 
-The core is a closed feedback loop that treats the product as a living artifact — observable, improvable, and self-correcting.
+Cogito treats software as a living artifact: observable, improvable, and self-correcting.
 
 ```
-Real usage signal (failures · drop-offs · latency · outcomes)
-           ↓
-     Goal engine — what matters, ranked by customer impact
-           ↓
-     Proposal — LLM drafts a scoped, typed improvement
-           ↓
-     Validation — sandboxed execution, regression suite
-           ↓
-     Governance — multi-model council, supermajority required
-           ↓
-     Deployment → measurement → signal feeds back in
+Usage and outcome signal
+        ↓
+Goal engine ranks what matters
+        ↓
+Proposal drafts a scoped improvement
+        ↓
+Validation runs in isolation
+        ↓
+Governance checks quality and risk
+        ↓
+Deployment, measurement, and feedback
 ```
 
-Nothing ships without passing validation. Nothing stays shipped without being measured. The loop is not a cron job — it is the primary development process.
+Nothing should improve just because it sounds clever. It improves because the outcome data says it worked.
 
-This is the hard problem we are working on: not building a chatbot, not wrapping an API. Building a system that can reason about its own behavior, propose correct improvements under uncertainty, and govern its own output quality well enough that humans can trust the result.
-
----
-
-## The Use Case: SMB
-
-33 million small businesses in the US spend an estimated **$500B/year** on admin labor and software combined. Most are still running on group texts, paper ledgers, and Square. The tools that exist were built for companies with IT departments. These businesses do not have IT departments.
-
-**Cogito SMB** gives a small business owner a complete operating system: AI receptionist, online booking, client CRM, payments, SMS and email automation, social media, invoicing, and a business website — all integrated, all AI-native, one monthly price, no setup required.
-
-It works in English, Spanish, and Chinese because the owners we are building for grew up navigating more than one language.
-
-Every interaction — a booking confirmed, a call handled, a follow-up sent — is a training signal that flows back into the engineering system. The product gets more accurate every week, not because engineers manually tune it, but because the loop runs.
+This is the hard problem we are working on: building a system that can reason about its own behavior, propose correct improvements under uncertainty, and govern its output quality well enough that people can trust the result.
 
 ---
 
-## Architecture
+## Why Service SMBs
 
-| Layer | What it does |
-|---|---|
-| **Intelligence** | Observes the full stack. Proposes, validates, and governs its own improvements. |
-| **Kernel** | Persistent AI reasoning core — intent understanding, goal management, agent coordination. |
-| **Engine** | Execution layer — the domain tools and automated workflows that run daily operations. |
-| **Products** | What customers touch — built and continuously evolved by the layers above. |
+Appointment-based businesses feel revenue leaks every week. They also create repeated, measurable workflows:
 
-The intelligence layer sits above everything and treats the entire system as something it can read, reason about, and rewrite. It is not a feature bolt-on. It is the architecture.
+- return missed demand
+- protect bookings before the calendar breaks
+- bring good clients back
+- collect or attribute recovered payments
+- prove the week in plain language
 
----
-
-## Why Now
-
-Large language models crossed a threshold in 2024: they can now reason about code, propose changes, and evaluate their own output with enough reliability to close a feedback loop without constant human supervision. We are building the engineering system that operationalizes this — not as a research project, but as a commercial product running on real customers.
-
-The window is open. It will not stay open long.
+That makes service SMBs the right first market for an AI-native operating platform. The pain is loud, the wedge is repeatable, and the outcome signal is proprietary.
 
 ---
 
 ## For Engineers
 
-If you have ever felt the frustration of building something that stops improving the moment you stop touching it — this is the opposite of that.
+The engineering problems here are not toy problems:
 
-The engineering problems here are real: how do you validate that an autonomously proposed change is safe? How do you build a governance layer that doesn't block good changes while blocking bad ones? How do you measure intelligence in a system that rewrites itself? How do you build trust between an autonomous system and the humans who depend on it?
+- How do you validate an autonomously proposed product change?
+- How do you measure whether a workflow actually improved?
+- How do you preserve owner trust while workflows get smarter?
+- How do you build a platform that learns from real outcomes rather than demo data?
 
-These are not toy problems. We are solving them in production, on a live product, with real customers.
-
-Small team. High ownership. Grounded in research — Hinton, Vaswani, Silver, Chollet — not buzzwords.
+We are solving those problems against a live commercial loop: revenue recovered for real operators.
 
 ---
 
 ## For Investors
 
-- **Market**: 33M US small businesses, $500B/year addressable spend, no credible AI-native competitor
-- **Defensibility**: Every week of customer usage makes the model more accurate for that vertical. A later entrant starts at zero signal.
-- **Leverage**: The same engineering system that builds SMB can be directed at any domain. SMB is the beachhead.
-- **Team**: Immigrant founders who grew up inside the problem. Not building for a market they read about.
+- **Wedge**: revenue recovery for salons, wellness, fitness, and service operators.
+- **Proof loop**: owner approvals, replies, bookings, protected appointments, and recovered payments.
+- **Dataset**: proprietary outcome history from real workflows, not generic intent data.
+- **Platform leverage**: the self-evolution engine improves workflows as outcome signal compounds.
+- **Expansion path**: start with recovered revenue, then grow into broader SMB operations from trust and proof.
 
 ---
 
-## We're Hiring
+## Work With Us
 
-We hire **Gentle UX Designers** — a standard, not a role. Everyone here, regardless of function, has personally navigated the gap between technology and the communities we serve. If you grew up translating for your parents, you already understand the problem better than most people with the right résumé.
+Start with the Revenue Leak Audit.
 
-We value craft, directness, and the willingness to build things that have never existed before.
+→ **[Book Audit](https://cogito.cv/revenue-audit#demo-form)**
 
-→ **[cogito.cv/careers](https://cogito.cv/careers)**
+Build with us.
+
+→ **[foundry@cogito.cv](mailto:foundry@cogito.cv)**
