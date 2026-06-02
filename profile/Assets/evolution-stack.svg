@@ -57,85 +57,47 @@
   <path id="loopPath" class="edge" d="M204 270 H468 V250 H742 V270 H1014 V412 H836 V510 H578 V412 H306 V270"/>
   <path class="active-edge" d="M204 270 H468 V250 H742 V270 H1014 V412 H836 V510 H578 V412 H306 V270"/>
 
-  <g class="token" transform="translate(204 270)">
-    <circle r="10" fill="#00d4aa"/>
-    <circle r="18" fill="#00d4aa" opacity="0.16"/>
-    <animateMotion dur="8.4s" repeatCount="indefinite" rotate="auto">
-      <path d="M0 0 H264 V-20 H538 V0 H810 V142 H632 V240 H374 V142 H102 V0"/>
-    </animateMotion>
-  </g>
-  <g class="token" transform="translate(204 270)">
-    <circle r="8" fill="#5bad6f"/>
-    <circle r="16" fill="#5bad6f" opacity="0.18"/>
-    <animateMotion dur="8.4s" begin="-2.8s" repeatCount="indefinite" rotate="auto">
-      <path d="M0 0 H264 V-20 H538 V0 H810 V142 H632 V240 H374 V142 H102 V0"/>
-    </animateMotion>
-  </g>
-  <g class="token" transform="translate(204 270)">
-    <circle r="8" fill="#f4c430"/>
-    <circle r="16" fill="#f4c430" opacity="0.18"/>
-    <animateMotion dur="8.4s" begin="-5.6s" repeatCount="indefinite" rotate="auto">
-      <path d="M0 0 H264 V-20 H538 V0 H810 V142 H632 V240 H374 V142 H102 V0"/>
-    </animateMotion>
-  </g>
+  <rect x="80" y="218" width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d" filter="url(#shadow)"/>
+  <text x="108" y="260" class="sans title" font-size="25">Product surfaces</text>
+  <text x="108" y="290" class="sans muted" font-size="16">The apps people touch.</text>
+  <text x="108" y="323" class="mono chip">macOS / SwiftUI / TypeScript</text>
 
-  <g class="node" transform="translate(80 218)" filter="url(#shadow)">
-    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
-    <text x="28" y="42" class="sans title" font-size="25">Product surfaces</text>
-    <text x="28" y="72" class="sans muted" font-size="16">The apps people touch.</text>
-    <text x="28" y="105" class="mono chip">macOS / SwiftUI / TypeScript</text>
-  </g>
+  <rect x="356" y="178" width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d" filter="url(#shadow)"/>
+  <text x="384" y="220" class="sans title" font-size="25">Breathe</text>
+  <text x="384" y="250" class="sans muted" font-size="16">Trajectory memory.</text>
+  <text x="384" y="283" class="mono chip">evidence chain</text>
 
-  <g class="node" transform="translate(356 178)" filter="url(#shadow)">
-    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
-    <text x="28" y="42" class="sans title" font-size="25">Breathe</text>
-    <text x="28" y="72" class="sans muted" font-size="16">Trajectory memory.</text>
-    <text x="28" y="105" class="mono chip">evidence chain</text>
-  </g>
+  <rect x="632" y="218" width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d" filter="url(#shadow)"/>
+  <text x="660" y="260" class="sans title" font-size="25">Evolve</text>
+  <text x="660" y="290" class="sans muted" font-size="16">Builds a world model.</text>
+  <text x="660" y="323" class="mono chip">active inference</text>
 
-  <g class="node" transform="translate(632 218)" filter="url(#shadow)">
-    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
-    <text x="28" y="42" class="sans title" font-size="25">Evolve</text>
-    <text x="28" y="72" class="sans muted" font-size="16">Builds a world model.</text>
-    <text x="28" y="105" class="mono chip">active inference</text>
-  </g>
+  <rect x="908" y="350" width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d" filter="url(#shadow)"/>
+  <text x="936" y="392" class="sans title" font-size="25">Kernel</text>
+  <text x="936" y="422" class="sans muted" font-size="16">Chooses who helps.</text>
+  <text x="936" y="455" class="mono chip">arbitration</text>
 
-  <g class="node" transform="translate(908 350)" filter="url(#shadow)">
-    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
-    <text x="28" y="42" class="sans title" font-size="25">Kernel</text>
-    <text x="28" y="72" class="sans muted" font-size="16">Chooses who helps.</text>
-    <text x="28" y="105" class="mono chip">arbitration</text>
-  </g>
+  <rect x="632" y="452" width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d" filter="url(#shadow)"/>
+  <text x="660" y="494" class="sans title" font-size="25">Engine</text>
+  <text x="660" y="524" class="sans muted" font-size="16">Runs tools and rules.</text>
+  <text x="660" y="557" class="mono chip">MCP / recipes / governance</text>
 
-  <g class="node" transform="translate(632 452)" filter="url(#shadow)">
-    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
-    <text x="28" y="42" class="sans title" font-size="25">Engine</text>
-    <text x="28" y="72" class="sans muted" font-size="16">Runs tools and rules.</text>
-    <text x="28" y="105" class="mono chip">MCP / recipes / governance</text>
-  </g>
+  <rect x="356" y="350" width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d" filter="url(#shadow)"/>
+  <text x="384" y="392" class="sans title" font-size="25">Mutations</text>
+  <text x="384" y="422" class="sans muted" font-size="16">Small candidate changes.</text>
+  <text x="384" y="455" class="mono chip">rule induction / playbooks</text>
 
-  <g class="node" transform="translate(356 350)" filter="url(#shadow)">
-    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
-    <text x="28" y="42" class="sans title" font-size="25">Mutations</text>
-    <text x="28" y="72" class="sans muted" font-size="16">Small candidate changes.</text>
-    <text x="28" y="105" class="mono chip">rule induction / playbooks</text>
-  </g>
+  <rect x="80" y="350" width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d" filter="url(#shadow)"/>
+  <text x="108" y="392" class="sans title" font-size="25">Fitness signals</text>
+  <text x="108" y="422" class="sans muted" font-size="16">Tests, traces, outcomes.</text>
+  <text x="108" y="455" class="mono chip">selection pressure</text>
 
-  <g class="node" transform="translate(80 350)" filter="url(#shadow)">
-    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
-    <text x="28" y="42" class="sans title" font-size="25">Fitness signals</text>
-    <text x="28" y="72" class="sans muted" font-size="16">Tests, traces, outcomes.</text>
-    <text x="28" y="105" class="mono chip">selection pressure</text>
-  </g>
-
-  <g transform="translate(80 568)">
-    <rect width="724" height="38" rx="19" fill="#071007" stroke="#29422d"/>
-    <text x="24" y="25" class="mono chip">observe</text>
-    <text x="128" y="25" class="mono chip">model</text>
-    <text x="226" y="25" class="mono chip">mutate</text>
-    <text x="332" y="25" class="mono chip">test</text>
-    <text x="420" y="25" class="mono chip">select</text>
-    <text x="524" y="25" class="mono chip">ship</text>
-    <text x="612" y="25" class="mono chip">learn</text>
-  </g>
+  <rect x="80" y="568" width="724" height="38" rx="19" fill="#071007" stroke="#29422d"/>
+  <text x="104" y="593" class="mono chip">observe</text>
+  <text x="208" y="593" class="mono chip">model</text>
+  <text x="306" y="593" class="mono chip">mutate</text>
+  <text x="412" y="593" class="mono chip">test</text>
+  <text x="500" y="593" class="mono chip">select</text>
+  <text x="604" y="593" class="mono chip">ship</text>
+  <text x="692" y="593" class="mono chip">learn</text>
 </svg>
