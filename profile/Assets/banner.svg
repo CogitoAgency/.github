@@ -232,29 +232,25 @@
       <circle cx="66" cy="0" r="1.8" fill="#162e1e" stroke="#3d8a51" stroke-width="0.4" opacity="0.5">
         <animate attributeName="opacity" values="0.3;0.5;0.3" dur="6s" repeatCount="indefinite" />
       </circle>
-      </g>
     </g>
+    </g>
+
   </g>
   </g>
 
   
   <text x="560" y="248" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-weight="700" font-size="96" fill="#e8f0e8">Cogito Agency</text>
-  <text x="564" y="316" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-weight="400" font-size="28" fill="#5BAD6F">The OS for AI-native businesses.</text>
-  <text x="564" y="360" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-weight="400" font-size="20" fill="#e8f0e8" opacity="0.6">Built by immigrants, for the neighborhoods tech forgot.</text>
+  <text x="564" y="316" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-weight="400" font-size="28" fill="#5BAD6F">Local AI tools for agent builders.</text>
+  <text x="564" y="360" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-weight="400" font-size="20" fill="#e8f0e8" opacity="0.6">Memory, voice, and context close to the machine.</text>
 
   <rect x="564" y="408" width="100" height="34" rx="17" fill="#0d2014" stroke="#1e4a2b" stroke-width="1"/>
-  <text x="614" y="430" text-anchor="middle" font-family="monospace" font-size="14" fill="#00D4AA">SMB OS</text>
+  <text x="614" y="430" text-anchor="middle" font-family="monospace" font-size="14" fill="#00D4AA">Local AI</text>
 
-  <rect x="676" y="408" width="130" height="34" rx="17" fill="#0d2014" stroke="#1e4a2b" stroke-width="1"/>
-  <text x="741" y="430" text-anchor="middle" font-family="monospace" font-size="14" fill="#00D4AA">Open Source</text>
-
-  <rect x="818" y="408" width="160" height="34" rx="17" fill="#0d2014" stroke="#1e4a2b" stroke-width="1"/>
-  <text x="898" y="430" text-anchor="middle" font-family="monospace" font-size="14" fill="#00D4AA">AI Orchestration</text>
+  <rect x="676" y="408" width="160" height="34" rx="17" fill="#0d2014" stroke="#1e4a2b" stroke-width="1"/>
+  <text x="756" y="430" text-anchor="middle" font-family="monospace" font-size="14" fill="#00D4AA">AI Orchestration</text>
 
   <text x="564" y="524" font-family="-apple-system, sans-serif" font-size="16" fill="#4d9e60">San Francisco</text>
   <circle cx="684" cy="520" r="2" fill="#2d6b3f"/>
-  <text x="698" y="524" font-family="-apple-system, sans-serif" font-size="16" fill="#4d9e60">Cape Verde</text>
-  <circle cx="800" cy="520" r="2" fill="#2d6b3f"/>
-  <text x="814" y="524" font-family="-apple-system, sans-serif" font-size="16" fill="#4d9e60">Remote</text>
+  <text x="698" y="524" font-family="-apple-system, sans-serif" font-size="16" fill="#4d9e60">Remote</text>
 
 </svg>

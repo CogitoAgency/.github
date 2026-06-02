@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">Cogito active product system map</title>
+  <desc id="desc">Three local macOS products connect into an agent memory and evolution platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030805"/>
+      <stop offset="0.55" stop-color="#071108"/>
+      <stop offset="1" stop-color="#0e1d10"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b160d"/>
+      <stop offset="1" stop-color="#071007"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7edb9d"/>
+      <stop offset="0.7" stop-color="#5bad6f"/>
+      <stop offset="1" stop-color="#00d4aa"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4c430"/>
+      <stop offset="1" stop-color="#e8a020"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .title { fill: #fff9e6; font-weight: 800; letter-spacing: -0.01em; }
+      .muted { fill: #91a891; }
+      .label { fill: #5bad6f; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; }
+      .tiny { fill: #7f967f; font-size: 12px; font-weight: 700; letter-spacing: 0.09em; }
+      .chip { fill: #cfe6cf; font-size: 13px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="520" rx="34" fill="url(#bg)"/>
+  <g opacity="0.42" stroke="#16331d" stroke-width="1">
+    <path d="M80 96 H1200"/>
+    <path d="M80 184 H1200"/>
+    <path d="M80 272 H1200"/>
+    <path d="M80 360 H1200"/>
+    <path d="M176 56 V460"/>
+    <path d="M392 56 V460"/>
+    <path d="M608 56 V460"/>
+    <path d="M824 56 V460"/>
+    <path d="M1040 56 V460"/>
+  </g>
+
+  <circle cx="1060" cy="96" r="180" fill="#00d4aa" opacity="0.06"/>
+  <circle cx="200" cy="420" r="210" fill="#5bad6f" opacity="0.06"/>
+
+  <text x="80" y="74" class="mono label">COGITO ACTIVE SYSTEM</text>
+  <text x="80" y="124" class="sans title" font-size="46">Local tools that remember the work.</text>
+  <text x="82" y="158" class="sans muted" font-size="20">Memory, voice, and relationship context stay close to the machine.</text>
+
+  <g transform="translate(80 210)" filter="url(#shadow)">
+    <rect width="340" height="190" rx="24" fill="url(#panel)" stroke="#29422d"/>
+    <circle cx="42" cy="42" r="18" fill="url(#leaf)"/>
+    <path d="M36 42 h12 M42 36 v24" stroke="#030805" stroke-width="3" stroke-linecap="round"/>
+    <text x="76" y="48" class="sans title" font-size="30">Breathe</text>
+    <text x="28" y="91" class="sans muted" font-size="17">Local memory for agentic</text>
+    <text x="28" y="116" class="sans muted" font-size="17">development sessions.</text>
+    <rect x="28" y="145" width="82" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="43" y="164" class="mono chip">MCP</text>
+    <rect x="120" y="145" width="104" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="137" y="164" class="mono chip">SQLite</text>
+    <rect x="234" y="145" width="82" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="248" y="164" class="mono chip">local</text>
+  </g>
+
+  <g transform="translate(460 210)" filter="url(#shadow)">
+    <rect width="340" height="190" rx="24" fill="url(#panel)" stroke="#29422d"/>
+    <circle cx="42" cy="42" r="18" fill="#00d4aa"/>
+    <path d="M33 42 c12 -18 24 18 36 0" fill="none" stroke="#030805" stroke-width="3" stroke-linecap="round"/>
+    <text x="76" y="48" class="sans title" font-size="30">BreathFlow</text>
+    <text x="28" y="91" class="sans muted" font-size="17">Voice-to-text that pastes</text>
+    <text x="28" y="116" class="sans muted" font-size="17">where the cursor lives.</text>
+    <rect x="28" y="145" width="92" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="43" y="164" class="mono chip">Swift</text>
+    <rect x="130" y="145" width="118" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="146" y="164" class="mono chip">on-device</text>
+    <rect x="258" y="145" width="70" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="274" y="164" class="mono chip">Mac</text>
+  </g>
+
+  <g transform="translate(840 210)" filter="url(#shadow)">
+    <rect width="340" height="190" rx="24" fill="url(#panel)" stroke="#29422d"/>
+    <circle cx="42" cy="42" r="18" fill="url(#gold)"/>
+    <path d="M33 42 h36 M42 33 v18 M60 33 v18" stroke="#030805" stroke-width="3" stroke-linecap="round"/>
+    <text x="76" y="48" class="sans title" font-size="30">Keepr</text>
+    <text x="28" y="91" class="sans muted" font-size="17">Relationship memory from</text>
+    <text x="28" y="116" class="sans muted" font-size="17">Messages and Contacts.</text>
+    <rect x="28" y="145" width="116" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="44" y="164" class="mono chip">Messages</text>
+    <rect x="154" y="145" width="112" height="28" rx="14" fill="#102315" stroke="#2e5535"/>
+    <text x="171" y="164" class="mono chip">Contacts</text>
+  </g>
+
+  <g opacity="0.8">
+    <path d="M420 305 H460" stroke="#5bad6f" stroke-width="2" stroke-dasharray="6 8"/>
+    <path d="M800 305 H840" stroke="#5bad6f" stroke-width="2" stroke-dasharray="6 8"/>
+  </g>
+
+  <g transform="translate(216 444)">
+    <rect width="848" height="44" rx="22" fill="#071007" stroke="#29422d"/>
+    <text x="28" y="29" class="mono tiny">EVOLVE</text>
+    <text x="122" y="29" class="sans muted" font-size="16">scan</text>
+    <text x="194" y="29" class="sans muted" font-size="16">model</text>
+    <text x="282" y="29" class="sans muted" font-size="16">harness</text>
+    <text x="392" y="29" class="sans muted" font-size="16">observe</text>
+    <text x="500" y="29" class="sans muted" font-size="16">improve</text>
+    <text x="626" y="29" class="mono tiny">ENGINE</text>
+    <text x="724" y="29" class="sans muted" font-size="16">MCP tools</text>
+  </g>
+</svg>
