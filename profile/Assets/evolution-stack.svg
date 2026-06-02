@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Cogito evolution stack animation</title>
+  <desc id="desc">An animated loop from product surfaces through memory, active inference, kernel, engine, mutations, fitness signals, and selection.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030805"/>
+      <stop offset="0.58" stop-color="#071108"/>
+      <stop offset="1" stop-color="#0e1d10"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101e12"/>
+      <stop offset="1" stop-color="#071007"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5bad6f"/>
+      <stop offset="0.58" stop-color="#00d4aa"/>
+      <stop offset="1" stop-color="#f4c430"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .title { fill: #fff9e6; font-weight: 800; }
+      .muted { fill: #91a891; }
+      .label { fill: #5bad6f; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; }
+      .chip { fill: #cfe6cf; font-size: 13px; font-weight: 700; }
+      .edge { fill: none; stroke: #29422d; stroke-width: 3; stroke-linecap: round; }
+      .active-edge { fill: none; stroke: url(#pulse); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 18 22; animation: dash 2.8s linear infinite; }
+      .node { animation: breathe 5.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .node:nth-of-type(2) { animation-delay: 0.35s; }
+      .node:nth-of-type(3) { animation-delay: 0.7s; }
+      .node:nth-of-type(4) { animation-delay: 1.05s; }
+      .node:nth-of-type(5) { animation-delay: 1.4s; }
+      .node:nth-of-type(6) { animation-delay: 1.75s; }
+      .node:nth-of-type(7) { animation-delay: 2.1s; }
+      @keyframes dash { to { stroke-dashoffset: -40; } }
+      @keyframes breathe {
+        0%, 100% { opacity: 0.9; transform: scale(1); }
+        45% { opacity: 1; transform: scale(1.025); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .active-edge, .node, .token { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1280" height="640" rx="34" fill="url(#bg)"/>
+  <g opacity="0.34" stroke="#16331d" stroke-width="1">
+    <path d="M80 110 H1200"/>
+    <path d="M80 230 H1200"/>
+    <path d="M80 350 H1200"/>
+    <path d="M80 470 H1200"/>
+    <path d="M186 64 V568"/>
+    <path d="M402 64 V568"/>
+    <path d="M618 64 V568"/>
+    <path d="M834 64 V568"/>
+    <path d="M1050 64 V568"/>
+  </g>
+  <circle cx="1055" cy="120" r="210" fill="#00d4aa" opacity="0.06"/>
+  <circle cx="205" cy="565" r="240" fill="#5bad6f" opacity="0.06"/>
+
+  <text x="80" y="78" class="mono label">EVOLUTION STACK</text>
+  <text x="80" y="126" class="sans title" font-size="44">The codebase learns in a loop.</text>
+  <text x="82" y="160" class="sans muted" font-size="20">Memory becomes evidence. Evidence becomes mutations. Fitness selects what ships.</text>
+
+  <path id="loopPath" class="edge" d="M204 270 H468 V250 H742 V270 H1014 V412 H836 V510 H578 V412 H306 V270"/>
+  <path class="active-edge" d="M204 270 H468 V250 H742 V270 H1014 V412 H836 V510 H578 V412 H306 V270"/>
+
+  <g class="token" transform="translate(204 270)">
+    <circle r="10" fill="#00d4aa"/>
+    <circle r="18" fill="#00d4aa" opacity="0.16"/>
+    <animateMotion dur="8.4s" repeatCount="indefinite" rotate="auto">
+      <path d="M0 0 H264 V-20 H538 V0 H810 V142 H632 V240 H374 V142 H102 V0"/>
+    </animateMotion>
+  </g>
+  <g class="token" transform="translate(204 270)">
+    <circle r="8" fill="#5bad6f"/>
+    <circle r="16" fill="#5bad6f" opacity="0.18"/>
+    <animateMotion dur="8.4s" begin="-2.8s" repeatCount="indefinite" rotate="auto">
+      <path d="M0 0 H264 V-20 H538 V0 H810 V142 H632 V240 H374 V142 H102 V0"/>
+    </animateMotion>
+  </g>
+  <g class="token" transform="translate(204 270)">
+    <circle r="8" fill="#f4c430"/>
+    <circle r="16" fill="#f4c430" opacity="0.18"/>
+    <animateMotion dur="8.4s" begin="-5.6s" repeatCount="indefinite" rotate="auto">
+      <path d="M0 0 H264 V-20 H538 V0 H810 V142 H632 V240 H374 V142 H102 V0"/>
+    </animateMotion>
+  </g>
+
+  <g class="node" transform="translate(80 218)" filter="url(#shadow)">
+    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
+    <text x="28" y="42" class="sans title" font-size="25">Product surfaces</text>
+    <text x="28" y="72" class="sans muted" font-size="16">The apps people touch.</text>
+    <text x="28" y="105" class="mono chip">macOS / SwiftUI / TypeScript</text>
+  </g>
+
+  <g class="node" transform="translate(356 178)" filter="url(#shadow)">
+    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
+    <text x="28" y="42" class="sans title" font-size="25">Breathe</text>
+    <text x="28" y="72" class="sans muted" font-size="16">Trajectory memory.</text>
+    <text x="28" y="105" class="mono chip">evidence chain</text>
+  </g>
+
+  <g class="node" transform="translate(632 218)" filter="url(#shadow)">
+    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
+    <text x="28" y="42" class="sans title" font-size="25">Evolve</text>
+    <text x="28" y="72" class="sans muted" font-size="16">Builds a world model.</text>
+    <text x="28" y="105" class="mono chip">active inference</text>
+  </g>
+
+  <g class="node" transform="translate(908 350)" filter="url(#shadow)">
+    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
+    <text x="28" y="42" class="sans title" font-size="25">Kernel</text>
+    <text x="28" y="72" class="sans muted" font-size="16">Chooses who helps.</text>
+    <text x="28" y="105" class="mono chip">arbitration</text>
+  </g>
+
+  <g class="node" transform="translate(632 452)" filter="url(#shadow)">
+    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
+    <text x="28" y="42" class="sans title" font-size="25">Engine</text>
+    <text x="28" y="72" class="sans muted" font-size="16">Runs tools and rules.</text>
+    <text x="28" y="105" class="mono chip">MCP / recipes / governance</text>
+  </g>
+
+  <g class="node" transform="translate(356 350)" filter="url(#shadow)">
+    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
+    <text x="28" y="42" class="sans title" font-size="25">Mutations</text>
+    <text x="28" y="72" class="sans muted" font-size="16">Small candidate changes.</text>
+    <text x="28" y="105" class="mono chip">rule induction / playbooks</text>
+  </g>
+
+  <g class="node" transform="translate(80 350)" filter="url(#shadow)">
+    <rect width="248" height="132" rx="22" fill="url(#node)" stroke="#29422d"/>
+    <text x="28" y="42" class="sans title" font-size="25">Fitness signals</text>
+    <text x="28" y="72" class="sans muted" font-size="16">Tests, traces, outcomes.</text>
+    <text x="28" y="105" class="mono chip">selection pressure</text>
+  </g>
+
+  <g transform="translate(80 568)">
+    <rect width="724" height="38" rx="19" fill="#071007" stroke="#29422d"/>
+    <text x="24" y="25" class="mono chip">observe</text>
+    <text x="128" y="25" class="mono chip">model</text>
+    <text x="226" y="25" class="mono chip">mutate</text>
+    <text x="332" y="25" class="mono chip">test</text>
+    <text x="420" y="25" class="mono chip">select</text>
+    <text x="524" y="25" class="mono chip">ship</text>
+    <text x="612" y="25" class="mono chip">learn</text>
+  </g>
+</svg>

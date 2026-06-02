@@ -72,18 +72,9 @@ The platform learns what each product needs, then builds the intelligence to bui
 
 ## Stack
 
-```mermaid
-flowchart TD
-    A["Product surfaces<br/>macOS · SwiftUI · TypeScript"] --> B["Breathe<br/>trajectory memory · evidence chain"]
-    B --> C["Evolve<br/>active inference loop"]
-    C --> D["Kernel<br/>capability decomposition · arbitration"]
-    D --> E["Engine<br/>MCP handlers · YAML recipes · governance"]
-    E --> F["Mutations<br/>candidate patches · playbooks"]
-    F --> G["Fitness signals<br/>tests · traces · outcomes"]
-    G --> H{"Selection"}
-    H -->|"survivor"| A
-    H -->|"reject"| F
-```
+<p align="center">
+  <img src="Assets/evolution-stack.svg" alt="Animated Cogito evolution stack showing product surfaces, Breathe, Evolve, Kernel, Engine, mutations, and fitness signals in a learning loop" width="100%">
+</p>
 
 Think of the codebase like a little garden that can read its own weather.
 
