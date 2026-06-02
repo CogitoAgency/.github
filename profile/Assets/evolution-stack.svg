@@ -28,20 +28,9 @@
       .chip { fill: #cfe6cf; font-size: 13px; font-weight: 700; }
       .edge { fill: none; stroke: #29422d; stroke-width: 3; stroke-linecap: round; }
       .active-edge { fill: none; stroke: url(#pulse); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 18 22; animation: dash 2.8s linear infinite; }
-      .node { animation: breathe 5.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      .node:nth-of-type(2) { animation-delay: 0.35s; }
-      .node:nth-of-type(3) { animation-delay: 0.7s; }
-      .node:nth-of-type(4) { animation-delay: 1.05s; }
-      .node:nth-of-type(5) { animation-delay: 1.4s; }
-      .node:nth-of-type(6) { animation-delay: 1.75s; }
-      .node:nth-of-type(7) { animation-delay: 2.1s; }
       @keyframes dash { to { stroke-dashoffset: -40; } }
-      @keyframes breathe {
-        0%, 100% { opacity: 0.9; transform: scale(1); }
-        45% { opacity: 1; transform: scale(1.025); }
-      }
       @media (prefers-reduced-motion: reduce) {
-        .active-edge, .node, .token { animation: none; }
+        .active-edge, .token { animation: none; }
       }
     </style>
   </defs>
