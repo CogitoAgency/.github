@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
-  <title id="title">Cogito evolution stack animation</title>
-  <desc id="desc">An animated loop from product surfaces through memory, active inference, kernel, engine, mutations, fitness signals, and selection.</desc>
+  <title id="title">Cogito evolution stack diagram</title>
+  <desc id="desc">A static loop from product surfaces through memory, active inference, kernel, engine, mutations, fitness signals, and selection.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#030805"/>
@@ -27,11 +27,7 @@
       .label { fill: #5bad6f; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; }
       .chip { fill: #cfe6cf; font-size: 13px; font-weight: 700; }
       .edge { fill: none; stroke: #29422d; stroke-width: 3; stroke-linecap: round; }
-      .active-edge { fill: none; stroke: url(#pulse); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 18 22; animation: dash 2.8s linear infinite; }
-      @keyframes dash { to { stroke-dashoffset: -40; } }
-      @media (prefers-reduced-motion: reduce) {
-        .active-edge, .token { animation: none; }
-      }
+      .active-edge { fill: none; stroke: url(#pulse); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 18 22; }
     </style>
   </defs>
 
