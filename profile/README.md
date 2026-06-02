@@ -30,13 +30,12 @@
 </p>
 
 <p align="center">
-  <code>macOS</code>
-  <code>Swift</code>
-  <code>SwiftUI</code>
-  <code>TypeScript</code>
-  <code>Node</code>
-  <code>SQLite</code>
-  <code>Claude Code</code>
+  <code>Evolve</code>
+  <code>Kernel</code>
+  <code>Engine</code>
+  <code>MCP handlers</code>
+  <code>YAML recipes</code>
+  <code>governance</code>
 </p>
 
 <p align="center">
@@ -73,7 +72,15 @@ The platform learns what each product needs, then builds the intelligence to bui
 
 ## Stack
 
-macOS · Swift · SwiftUI · TypeScript · Node · SQLite · Claude Code
+| Layer | What it carries |
+|---|---|
+| **Evolve** | Observe fitness, generate mutations, select survivors, ship improvements. |
+| **Kernel** | Decompose capability, route agents, arbitrate work, preserve intent. |
+| **Engine** | Run MCP tool handlers, recipes, harnesses, and governance rules. |
+| **Breathe** | Capture sessions, index memory, restore context, expose `localhost:4567`. |
+| **Product surfaces** | macOS · Swift · SwiftUI · TypeScript · Node · SQLite · Claude Code. |
+
+The application stack is the visible shell. The evolution stack is the compounding system underneath it.
 
 ---
 
