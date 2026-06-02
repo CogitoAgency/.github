@@ -72,15 +72,24 @@ The platform learns what each product needs, then builds the intelligence to bui
 
 ## Stack
 
-| Layer | What it carries |
-|---|---|
-| **Evolve** | Observe fitness, generate mutations, select survivors, ship improvements. |
-| **Kernel** | Decompose capability, route agents, arbitrate work, preserve intent. |
-| **Engine** | Run MCP tool handlers, recipes, harnesses, and governance rules. |
-| **Breathe** | Capture sessions, index memory, restore context, expose `localhost:4567`. |
-| **Product surfaces** | macOS · Swift · SwiftUI · TypeScript · Node · SQLite · Claude Code. |
+```mermaid
+flowchart TD
+    A["Product surfaces<br/>macOS · SwiftUI · TypeScript"] --> B["Breathe<br/>trajectory memory · evidence chain"]
+    B --> C["Evolve<br/>active inference loop"]
+    C --> D["Kernel<br/>capability decomposition · arbitration"]
+    D --> E["Engine<br/>MCP handlers · YAML recipes · governance"]
+    E --> F["Mutations<br/>candidate patches · playbooks"]
+    F --> G["Fitness signals<br/>tests · traces · outcomes"]
+    G --> H{"Selection"}
+    H -->|"survivor"| A
+    H -->|"reject"| F
+```
 
-The application stack is the visible shell. The evolution stack is the compounding system underneath it.
+Think of the codebase like a little garden that can read its own weather.
+
+The apps are the leaves you can touch. Breathe remembers the trajectory of what happened. Evolve builds a generative model of the work, then tries small mutations. Kernel decides which agents should help. Engine gives them tools, recipes, and governance. Tests and traces become fitness signals. Good changes survive. Bad changes go back into the playbook.
+
+That is the research shape: active inference, explicit reasoning, rule induction, curriculum, evidence chains, and selection pressure, applied to software.
 
 ---
 
